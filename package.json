@@ -23,6 +23,7 @@
   "homepage": "https://github.com/sevfitz/bitmap-transformer#readme",
   "devDependencies": {
     "eslint": "^4.2.0",
+    "file-system": "^2.2.2",
     "mocha": "^3.4.2"
   }
 }
