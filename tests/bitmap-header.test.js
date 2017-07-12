@@ -7,12 +7,12 @@ describe.only('bitmap header', () => {
 
     let buffer = null;
     before(() => {
-        // TODO: read './test/test-bitmap.bmp' into buffer variable
+        // DONE: read './test/test-bitmap.bmp' into buffer variable
         buffer = fs.readFileSync('./tests/test-bitmap.bmp');
     });
 
-    it.only('has correct specs', () => {
-        // TODO: read the docs to figure out what these values should be
+    it('has correct specs', () => {
+        // DONE: read the docs to figure out what these values should be
         assert.ok(constants.PIXEL_OFFSET);
         assert.ok(constants.BITS_PER_PIXEL_OFFSET);
         assert.ok(constants.FILE_SIZE_OFFSET);
