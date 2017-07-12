@@ -1,15 +1,15 @@
 const assert = require('assert');
-const fs = require('fs');
-// const BitmapTransformer = require('../lib/bitmap-transformer');
-// const invert = require('../lib/invert-transform');
+const runBefore = require('../lib/before-test');
+const BitmapTransformer = require('../lib/bitmap-transformer');
+const invert = require('../lib/invert-transform');
 
-xdescribe('bitmap file transformer', () => {
+describe('bitmap file transformer', () => {
     
     let buffer = null;
     before(() => {
-        // TODO: read './test/test-bitmap.bmp' into buffer variable
-
-        // TODO: the functionality in this before is same as 
+        // DONE: read './test/test-bitmap.bmp' into buffer variable
+        buffer = runBefore();
+        // DONE: the functionality in this before is same as 
         // other test, can you remove (extract) the duplication?
     });
 
