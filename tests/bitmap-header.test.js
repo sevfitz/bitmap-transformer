@@ -7,8 +7,6 @@ describe('bitmap header', () => {
     let buffer = null;
     before(() => {
         // TODO: read './test/test-bitmap.bmp' into buffer variable
-
-        // HINT: return a promise, this is async!
     });
 
     it('has correct specs', () => {
