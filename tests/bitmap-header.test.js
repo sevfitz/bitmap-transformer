@@ -3,15 +3,15 @@ const constants = require('../lib/bitmap-constants');
 const BitmapHeader = require('../lib/bitmap-header');
 const fs = require('file-system');
 
-describe('bitmap header', () => {
+describe.only('bitmap header', () => {
 
     let buffer = null;
     before(() => {
         // TODO: read './test/test-bitmap.bmp' into buffer variable
-        buffer = fs.readFileSync('./test/test-bitmap.bmp');
+        buffer = fs.readFileSync('./tests/test-bitmap.bmp');
     });
 
-    it('has correct specs', () => {
+    it.only('has correct specs', () => {
         // TODO: read the docs to figure out what these values should be
         assert.ok(constants.PIXEL_OFFSET);
         assert.ok(constants.BITS_PER_PIXEL_OFFSET);
