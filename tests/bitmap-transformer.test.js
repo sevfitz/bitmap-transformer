@@ -8,7 +8,6 @@ describe('bitmap file transformer', () => {
     let buffer = null;
     before(() => {
         // TODO: read './test/test-bitmap.bmp' into buffer variable
-        // HINT: return a promise, this is async!
 
         // TODO: the functionality in this before is same as 
         // other test, can you remove (extract) the duplication?
