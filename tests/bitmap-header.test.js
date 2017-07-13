@@ -1,14 +1,14 @@
 const assert = require('assert');
 const constants = require('../lib/bitmap-constants');
 const BitmapHeader = require('../lib/bitmap-header');
-const runBefore = require('../lib/before-test');
+const beforeTest = require('../lib/before-test');
 
 describe('bitmap header', () => {
 
     let buffer = null;
     before(() => {
         // DONE: read './test/test-bitmap.bmp' into buffer variable
-        buffer = runBefore();
+        buffer = beforeTest();
     });
 
     it('has correct specs', () => {
